@@ -7,35 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Secrets</title>
+
 </head>
-<script src="/desafio.js"></script>
 
 <body>
 
-    <div class="titulo">
-        <h1>Mensagem Secreta</h1>
-    </div>
 
-    <div class="container">
-
-        <input class="box-texto" type="text" name="texto" placeholder="Digite seu texto aqui!" id="texto1">
-
-        <div class="box_msg">
-            <h4>Nenhuma mensagem encontrada</h4>
-            <p>Digite um texto que você queira encriptografar e desencriptografar.</p>
+    <header>
+        <!-- falta colocar a Logo Alura -->
+        <div class="titulo">
+            <h1>Mensagem Secreta</h1>
         </div>
 
-        <div class="botao">
-            <button class="btn-one">Criptografar</button>
-            <button class="btn-one">Descriptografar</button>
-        </div>
-    </div>
+    </header>
+
+    <!-- Inserir animação no placeholder -->
+    <main class="main">
+
+        <section>
+            <textarea id="text-input " class="box-texto" cols="30" rows="6" placeholder="Digite seu texto aqui">
+                </textarea>
+
+
+            <div class="atencao">
+                <img src="/img/ponto-de-exclamacao.png" alt="alerta" width="3%">Apenas letras minúsculas e sem acento.
+            </div>
+
+            <div class="buttons">
+                <button class="btn1" onclick="btEncriptar()">Criptografar</button>
+
+                <button class="btn2" value="descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <section>
+            <textarea id="text-output" class="box-msg" cols="30" rows="8" placeholder=" ???">
+                </textarea>
+        </section>
+    </main>
 
     <footer>
+        <!-- Colocar link das redes sociais -->
         <div class="footer">
             Densenvolvido por Luciana Santos 2022
         </div>
     </footer>
+
+    <script src="/script.js"></script>
 </body>
 
 </html>
