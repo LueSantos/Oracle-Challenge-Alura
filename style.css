@@ -12,14 +12,20 @@ body {
 
 .main {
     display: flex;
-    margin: 50px;
+    margin: 10px;
     justify-content: center;
 }
 
+ .logo{
+     margin: 5px;
+    display: flex;
+    justify-content: safe;
+} 
 
 .titulo {
 
     max-width: auto;
+    justify-content: center;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
