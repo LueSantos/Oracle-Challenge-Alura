@@ -4,99 +4,128 @@
 }
 
 body {
+    background-image: url("img/bg_tela.png");
+    font-family: 'Major Mono Display', monospace;
     max-width: 100%;
     background-color: rgb(232, 237, 245);
 }
 
 .main {
-display: flex;
-margin: 30px;
-
+    display: flex;
+    margin: 50px;
+    justify-content: center;
 }
 
+
 .titulo {
+
     max-width: auto;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(61, 61, 61);
+    color: aliceblue;
 }
 
-.box-texto{
-  resize: none;
-  width: 750px;
-  height: 250px;
-    text-align: center;
-    font-size: 20px;
+
+.box-texto {
+    font-family: 'Roboto Mono', monospace;
+    resize: none;
+    width: 750px;
+    height: 450px;
+    font-size: 30px;
     margin: 5px;
     border: azure solid 1px;
     border-radius: 25px;
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     color: rgb(57, 57, 159);
+    text-align: center;
+}
+
+.atencao {
+    font-family: 'Roboto Mono', monospace;
+
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
 }
 
 
-.box-msg{
-    width: 230px;
-    height: 400px;
-   resize: none;
-   position: relative;
+.box-msg {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    width: 310px;
+    height: 500px;
+    resize: none;
+    position: relative;
+    justify-content: center;
     text-align: center;
     border-radius: 25px;
     border: rgb(95, 101, 101) solid 1px;
     background-color: rgb(255, 255, 255);
-    background-image: url("img/criptografia.gif") ;
+    background-image: url("img/criptografia.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 150px;
 }
 
-.botao {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    margin-right: 370px;
+.btn {
+    background-image: url("/img/bg_color_silver.jpg");
+    font-family: 'Major Mono Display', monospace;
+    color: rgb(3, 3, 3);
     text-align: center;
-    padding-top: 10px;
-    border:azure;
+    width: 190px;
+    background-color: #D6E4E5;
+    padding: 4px;
+    border-radius: 25px;
+    font-size: 15px;
+    margin: 5px;
+    cursor: pointer;
 
 }
 
-.btn-one {
-    
+#copy {
     text-align: center;
-    width: 170px;
-    background-color: rgb(222, 216, 216);
+
+}
+
+.btn-copy {
+    background-image: url("/img/bg_color_silver.jpg");
+    flex-direction: row;
+    text-align: center;
+    width: 150px;
+    font-family: 'Major Mono Display', monospace;
+    color: rgb(3, 3, 3);
     padding: 4px;
     border-radius: 25px;
-    font-size: 20px;
-    margin: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+
 }
 
 .footer {
-    background-color: rgb(101, 174, 167);
+    background-image: url("/img/bg_color_silver.jpg");
     text-align: center;
-    color: rgb(61, 61, 61);
-    height: 20px;
-    padding: 10px;
+    color: rgb(3, 3, 3);
+    height: 100px;
+
+
 }
 
-h4 {
-    text-align: center;
-    padding-top: 130px;
-    color: red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 17px;
-}
-
-p {
-    text-align: center;
-    margin-top: 5px;
-    font-size: 13px;
-    padding: 10px;
+.text-footer {
+    font-size: 20px;
 }
 
 
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 
+}
+
+.github {
+    padding: 15px;
+}

@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto+Mono:wght@100;353&display=swap"
+        rel="stylesheet">
     <title>Secrets</title>
 
 </head>
@@ -25,31 +30,50 @@
     <main class="main">
 
         <section>
-            <textarea id="text-input " class="box-texto" cols="30" rows="6" placeholder="Digite seu texto aqui">
+            <textarea id="text-input" class="box-texto" cols="30" rows="6" placeholder="Digite seu texto ">
                 </textarea>
 
 
             <div class="atencao">
-                <img src="/img/ponto-de-exclamacao.png" alt="alerta" width="3%">Apenas letras minúsculas e sem acento.
+
+                <img class="img_atencao" src="/img/ponto-de-exclamacao.png" alt="alerta" width="3%">
+                Apenas letras minúsculas e sem acento!
+
             </div>
 
             <div class="buttons">
-                <button class="btn1" onclick="btEncriptar()">Criptografar</button>
+                <button class="btn" onclick="btEncriptar()">Criptografar</button>
 
-                <button class="btn2" value="descriptografar">Descriptografar</button>
+                <button class="btn" onclick="btDescriptar()">Descriptografar</button>
             </div>
         </section>
         <section>
-            <textarea id="text-output" class="box-msg" cols="30" rows="8" placeholder=" ???">
-                </textarea>
+            <textarea id="text-output"  class="box-msg" cols="30" rows="8" placeholder="" readonly>
+
+            </textarea>
+            <div id="copy">
+                <button class="btn-copy" onclick="CopiarTexto()">Copiar Texto</button>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <!-- Colocar link das redes sociais -->
-        <div class="footer">
-            Densenvolvido por Luciana Santos 2022
+
+        <div class="redes">
+            <a href="https://github.com/LueSantos" target="_blank">
+                <img class="github" src="/img/github.png" alt="ícone do github" width="35px">
+            </a>
+
+            <a href="https://www.linkedin.com/in/luesantos/" target="_blank">
+                <img class="linkedin" src="/img/linkedin.png" alt="ícone do linkedin" width="35px">
+            </a>
         </div>
+
+        <p class="text-footer">
+            ©LueSantos 2022
+        </p class="text-footer">
+
     </footer>
 
     <script src="/script.js"></script>
