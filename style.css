@@ -76,7 +76,7 @@ body {
 }
 
 .btn {
-    background-image: url("/img/bg_color_silver.jpg");
+    background-image: url("img/bg_color_silver.jpg");
     font-family: 'Major Mono Display', monospace;
     color: rgb(3, 3, 3);
     text-align: center;
@@ -96,7 +96,7 @@ body {
 }
 
 .btn-copy {
-    background-image: url("/img/bg_color_silver.jpg");
+    background-image: url("img/bg_color_silver.jpg");
     flex-direction: row;
     text-align: center;
     width: 150px;
@@ -111,7 +111,7 @@ body {
 }
 
 .footer {
-    background-image: url("/img/bg_color_silver.jpg");
+    background-image: url("img/bg_color_silver.jpg");
     text-align: center;
     color: rgb(3, 3, 3);
     height: 80px;
