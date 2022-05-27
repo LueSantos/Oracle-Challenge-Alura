@@ -54,6 +54,7 @@ btDescriptar = () => {
 
   if (textoDescriptado.length == 0) {
     alert('Nenhum texto criptografado!');
+    limpar();
   }
 };
 
