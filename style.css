@@ -35,6 +35,8 @@ body {
 
 
 .box-texto {
+    display: flex ;
+    flex: 1;
     font-family: 'Roboto Mono', monospace;
     resize: none;
     width: 750px;
