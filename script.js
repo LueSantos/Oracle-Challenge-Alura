@@ -90,3 +90,4 @@ descriptografar = (textoDescodificado) => {
   }
   return textoDescodificado;
 };
+ 
